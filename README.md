@@ -103,7 +103,7 @@ Warns you when you return after the cache has likely expired, and tells you how 
 
 **① From GitHub** <sub>(recommended)</sub> — inside Claude Code:
 ```
-/plugin marketplace add vinayak-neoflo/cctoken-saverr
+/plugin marketplace add V-inaya-K/cctoken-saverr
 /plugin install cctoken-saverr@cctoken-saverr
 ```
 The first `cctoken-saverr` is the plugin, the second is the marketplace. You can also type `/plugin` and pick it from the menu. Then **restart Claude Code** so the hooks load.
@@ -115,7 +115,7 @@ The desktop app's Code tab and the CLI share the same `~/.claude` config, so a p
 
 1. Open any terminal (PowerShell, Terminal, or the app's built-in terminal panel) and run:
    ```bash
-   claude plugin marketplace add vinayak-neoflo/cctoken-saverr
+   claude plugin marketplace add V-inaya-K/cctoken-saverr
    claude plugin install cctoken-saverr@cctoken-saverr
    ```
    No `claude` command? Install the CLI first: `npm install -g @anthropic-ai/claude-code`.
@@ -139,7 +139,7 @@ The desktop app's Code tab and the CLI share the same `~/.claude` config, so a p
 <summary><b>③ Manually</b> (without the plugin system)</summary>
 
 ```bash
-git clone https://github.com/vinayak-neoflo/cctoken-saverr
+git clone https://github.com/V-inaya-K/cctoken-saverr
 mkdir -p ~/.claude/skills ~/.claude/commands ~/.claude/cctoken-saverr
 cp -r cctoken-saverr/skills/cctoken-saverr ~/.claude/skills/
 cp cctoken-saverr/commands/handoff.md ~/.claude/commands/
@@ -237,7 +237,7 @@ Set these in the `env` block of `settings.json`. All are optional.
 {
   "extraKnownMarketplaces": {
     "cctoken-saverr": {
-      "source": { "source": "github", "repo": "vinayak-neoflo/cctoken-saverr" }
+      "source": { "source": "github", "repo": "V-inaya-K/cctoken-saverr" }
     }
   },
   "enabledPlugins": { "cctoken-saverr@cctoken-saverr": true },
