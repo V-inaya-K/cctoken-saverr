@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "description": "Cut Claude Code cache read/write costs: smaller context, stable cache, a warning when the 5-minute cache has expired, and guardrails so important context is never lost.",
   "author": { "name": "Vinayak Shukla" },
-  "repository": "https://github.com/vinayak-neoflo/cctoken-saverr",
+  "repository": "https://github.com/V-inaya-K/cctoken-saverr",
   "license": "MIT",
   "keywords": ["tokens", "cost", "prompt-caching", "context"]
 }
