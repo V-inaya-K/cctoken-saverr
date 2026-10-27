@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200">
+  <style>
+    .t{font-family:'Segoe UI',Helvetica,Arial,sans-serif}
+    .l{fill:#8b949e;font-size:13px}.v{fill:#e6edf3;font-size:15px;font-weight:700}
+  </style>
+  <rect width="900" height="200" rx="14" fill="#0d1117"/>
+  <text class="t v" x="30" y="40">Cost of one turn on a 150k-token context</text>
+  <text class="t l" x="30" y="85">Cache read (warm, 0.1x)</text>
+  <rect x="250" y="70" width="0" height="22" rx="5" fill="#7ef0c4">
+    <animate attributeName="width" values="0;50;50" keyTimes="0;.3;1" dur="5s" repeatCount="indefinite"/>
+  </rect>
+  <text class="t l" x="30" y="135">Cache write after 5-min idle (1.25x)</text>
+  <rect x="250" y="120" width="0" height="22" rx="5" fill="#ff6b6b">
+    <animate attributeName="width" values="0;0;610;610" keyTimes="0;.3;.7;1" dur="5s" repeatCount="indefinite"/>
+  </rect>
+  <text class="t v" x="870" y="137" text-anchor="end" fill="#ff6b6b" opacity="0">≈12x
+    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;.65;.75;1" dur="5s" repeatCount="indefinite"/>
+  </text>
+  <text class="t l" x="30" y="180">The idle guard warns you before that happens.</text>
+</svg>

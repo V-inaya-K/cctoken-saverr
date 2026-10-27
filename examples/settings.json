@@ -1,0 +1,23 @@
+{
+  "promptCacheTtl": "1h",
+  "env": {
+    "CCTOKEN_SAVERR_TTL_MINUTES": "60",
+    "CCTOKEN_SAVERR_MODE": "warn",
+    "CCTOKEN_SAVERR_BACKUP": "1",
+    "CCTOKEN_SAVERR_NOTES_ON": "clear,compact"
+  },
+  "hooks": {
+    "Stop": [
+      { "hooks": [ { "type": "command", "command": "python3 ~/.claude/cctoken-saverr/idle_guard.py stop" } ] }
+    ],
+    "UserPromptSubmit": [
+      { "hooks": [ { "type": "command", "command": "python3 ~/.claude/cctoken-saverr/idle_guard.py prompt" } ] }
+    ],
+    "PreCompact": [
+      { "hooks": [ { "type": "command", "command": "python3 ~/.claude/cctoken-saverr/idle_guard.py precompact" } ] }
+    ],
+    "SessionStart": [
+      { "hooks": [ { "type": "command", "command": "python3 ~/.claude/cctoken-saverr/idle_guard.py session" } ] }
+    ]
+  }
+}

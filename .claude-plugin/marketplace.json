@@ -1,0 +1,11 @@
+{
+  "name": "cctoken-saverr",
+  "owner": { "name": "YOUR_NAME" },
+  "plugins": [
+    {
+      "name": "cctoken-saverr",
+      "source": "./",
+      "description": "Cut Claude Code cache read/write costs: smaller context, stable cache, idle-expiry warnings, context guardrails."
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+## Token budget
+- Search (grep/rg/glob) before reading; read line ranges, not whole files over ~300 lines. Always read code before editing it.
+- Cap command output (head/tail, -q flags, --stat); keep error output with tail. Never dump lockfiles, build output or node_modules.
+- Delegate broad codebase exploration to a subagent and ask for a short summary.
+- Record key decisions and next steps in .claude/cctoken-saverr-notes.md (under 40 lines).
+- Before suggesting /clear, save notes; never suggest it mid-task.

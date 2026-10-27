@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="900" height="220">
+  <style>
+    .t{font-family:'Segoe UI',Helvetica,Arial,sans-serif}
+    .box{fill:#161b22;stroke:#30363d;stroke-width:1.5}
+    .h{fill:#e6edf3;font-size:16px;font-weight:700}
+    .s{fill:#8b949e;font-size:12px}
+    .line{stroke:#d97757;stroke-width:2.5;stroke-dasharray:8 8;animation:dash 1.2s linear infinite;fill:none}
+    @keyframes dash{to{stroke-dashoffset:-16}}
+    @keyframes glow{0%,100%{stroke:#30363d}50%{stroke:#7ef0c4}}
+    .g1{animation:glow 4s infinite}.g2{animation:glow 4s 1s infinite}.g3{animation:glow 4s 2s infinite}.g4{animation:glow 4s 3s infinite}
+  </style>
+  <rect width="900" height="220" rx="14" fill="#0d1117"/>
+  <path class="line" d="M200 110 H240 M420 110 H460 M640 110 H680"/>
+  <g class="t">
+    <rect class="box g1" x="30" y="55" width="170" height="110" rx="12"/>
+    <text class="h" x="115" y="98" text-anchor="middle">🎯 Skill</text>
+    <text class="s" x="115" y="122" text-anchor="middle">targeted reads</text>
+    <text class="s" x="115" y="140" text-anchor="middle">capped output</text>
+    <rect class="box g2" x="240" y="55" width="180" height="110" rx="12"/>
+    <text class="h" x="330" y="98" text-anchor="middle">⏱️ Idle guard</text>
+    <text class="s" x="330" y="122" text-anchor="middle">warns when cache</text>
+    <text class="s" x="330" y="140" text-anchor="middle">likely expired</text>
+    <rect class="box g3" x="460" y="55" width="180" height="110" rx="12"/>
+    <text class="h" x="550" y="98" text-anchor="middle">📝 Notes file</text>
+    <text class="s" x="550" y="122" text-anchor="middle">re-injected after</text>
+    <text class="s" x="550" y="140" text-anchor="middle">/clear &amp; /compact</text>
+    <rect class="box g4" x="680" y="55" width="190" height="110" rx="12"/>
+    <text class="h" x="775" y="98" text-anchor="middle">💾 Backups</text>
+    <text class="s" x="775" y="122" text-anchor="middle">transcript saved</text>
+    <text class="s" x="775" y="140" text-anchor="middle">before compaction</text>
+  </g>
+</svg>

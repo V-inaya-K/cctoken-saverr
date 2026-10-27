@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a1033"/><stop offset="1" stop-color="#0b2a3a"/>
+    </linearGradient>
+    <linearGradient id="txt" x1="0" x2="1">
+      <stop offset="0" stop-color="#ff9a5a"><animate attributeName="stop-color" values="#ff9a5a;#ffd36e;#7ef0c4;#ff9a5a" dur="6s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="#d97757"><animate attributeName="stop-color" values="#d97757;#ff9a5a;#ffd36e;#d97757" dur="6s" repeatCount="indefinite"/></stop>
+    </linearGradient>
+    <style>
+      .t{font-family:'Segoe UI',Helvetica,Arial,sans-serif}
+      .tok{fill:#ffd36e;opacity:.0}
+      @keyframes fall{0%{transform:translateY(-20px);opacity:0}15%{opacity:.9}100%{transform:translateY(280px);opacity:0}}
+      .tok{animation:fall 5s linear infinite}
+      @keyframes pulse{0%,100%{opacity:.55}50%{opacity:1}}
+      .sub{animation:pulse 3s ease-in-out infinite}
+    </style>
+  </defs>
+  <rect width="900" height="260" rx="18" fill="url(#bg)"/>
+  <g class="t" font-size="13" font-weight="700">
+    <text class="tok" x="60"  style="animation-delay:0s">tok</text>
+    <text class="tok" x="150" style="animation-delay:1.2s">$</text>
+    <text class="tok" x="250" style="animation-delay:2.5s">tok</text>
+    <text class="tok" x="640" style="animation-delay:.6s">$</text>
+    <text class="tok" x="740" style="animation-delay:1.9s">tok</text>
+    <text class="tok" x="830" style="animation-delay:3.3s">$</text>
+    <text class="tok" x="420" style="animation-delay:4.1s">tok</text>
+  </g>
+  <text class="t" x="450" y="125" text-anchor="middle" font-size="62" font-weight="800" fill="url(#txt)">cctoken-saverr</text>
+  <text class="t sub" x="450" y="170" text-anchor="middle" font-size="20" fill="#cfd8e3">Smaller context. Fewer cache tokens. Nothing important lost.</text>
+  <rect x="330" y="195" width="240" height="8" rx="4" fill="#ffffff22"/>
+  <rect x="330" y="195" width="240" height="8" rx="4" fill="#7ef0c4">
+    <animate attributeName="width" values="240;70;70;240" keyTimes="0;.45;.85;1" dur="5s" repeatCount="indefinite"/>
+  </rect>
+  <text class="t" x="450" y="228" text-anchor="middle" font-size="12" fill="#8fa3b8">context size per turn</text>
+</svg>
